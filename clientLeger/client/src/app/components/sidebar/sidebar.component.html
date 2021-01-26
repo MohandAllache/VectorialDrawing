@@ -1,0 +1,46 @@
+<div class="bodyMock">
+    <div class="container2">
+        <div #icons class="icon-bar">
+            <div class="inlineclass">
+                <div class="drawingtoolscontainer">
+                    <a id="pencil" class="active" (click)="displayPalette('pencil')" (click)="changeTools('pencil')">
+                        <i class="material-icons">gesture</i>
+                        <span class="slidingtxt2"> Crayon (C)</span>
+                    </a>
+
+
+                    <div class="drawingtoolscontainer">
+                        <a id="eraser" (click)="displayPalette('eraser')" (click)="changeTools('eraser')">
+                            <i class="material-icons">remove_circle_outline</i>
+                            <span class="slidingtxt"> Efface (E)</span>
+                        </a>
+                        <a id="grid-on" (click)="displayPalette('grid')" (click)="changeTools('grid')">
+                            <i class="material-icons">grid_on</i>
+                            <span class="slidingtxt"> Grille (G)</span>
+                        </a>
+                    </div>
+
+
+                    <div class="drawingtoolscontainer2">
+                        <a (click)="undo()">
+                            <i class="material-icons">undo</i>
+                        </a>
+                        <a (click)="redo()">
+                            <i class="material-icons">redo</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="color-bar">
+                <div class="colorboxcontainer">
+                    <a (click)="toggleColorPalette('primaryColorPicker')" class="color-box1"> </a>
+                    <a class="tooltip">
+                        <i (click)="revertColors()" class="material-icons change">swap_horiz</i>
+                    </a>
+                    <a (click)="toggleColorPalette('secondaryColorPicker')" class="color-box2"> </a>
+                </div>
+            </div>
+
+        </div>
+    </div>

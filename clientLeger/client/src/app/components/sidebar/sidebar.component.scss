@@ -1,0 +1,293 @@
+.bodyMock {
+    width: 16px;
+    user-select: none;
+}
+
+.material-icons {
+    padding-top: 2px;
+}
+
+#redo {
+    transform: rotate(180deg);
+}
+
+.container2 {
+    height: 100%;
+    min-height: 98vh;
+    position: fixed;
+    left: 0px;
+    top: 0;
+    background-color: rgb(64, 61, 85);
+}
+
+.inlineclass {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.material-icons {
+    color: white;
+}
+
+.drawingtoolscontainer {
+    display: inline-table;
+    border-top: solid 2px darkgray;
+    margin-bottom: 8px;
+}
+
+.drawingtoolscontainer2 {
+    display: flex;
+    border-top: solid 2px darkgray;
+}
+
+.colorboxcontainer {
+    display: flex;
+}
+
+.actioniconcontainer {
+    display: flex;
+}
+
+.icon-bar {
+    display: inline-table;
+    width: 100px;
+    background-color: rgb(64, 61, 85);
+    padding-bottom: 10px;
+    border-bottom: solid 2px darkgray;
+}
+
+.icon-bar a {
+    display: block;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease;
+    color: white;
+    top: 10px;
+    padding: 10px;
+    color: rgb(64, 61, 85);
+    cursor: pointer;
+}
+
+.icon-bar a:hover {
+    background-color: #9fa1a3;
+    .slidingtxt {
+        visibility: initial;
+        -webkit-transform: translateX(55px);
+        transform: translate(55px);
+    }
+    .slidingtxt2 {
+        visibility: initial;
+        -webkit-transform: translateX(55px);
+        transform: translate(55px);
+    }
+}
+
+.slidingtxt {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: auto;
+    height: 30px;
+    visibility: hidden;
+    text-align: center;
+    transition: all 0.3s ease;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(64, 61, 85);
+    z-index: -1;
+}
+
+.slidingtxt2 {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 0;
+    left: 45px;
+    width: auto;
+    height: 30px;
+    visibility: hidden;
+    text-align: center;
+    transition: all 0.3s ease;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(64, 61, 85);
+    z-index: -1;
+}
+
+.icon-bar2 {
+    position: relative;
+    top: 30px;
+    width: 50px;
+    background-color: rgb(64, 61, 85);
+    left: 4px;
+}
+
+.color-bar {
+    position: relative;
+    padding-left: 4px;
+    top: 0px;
+    width: 50px;
+    background-color: rgb(64, 61, 85);
+}
+
+.color-bar a {
+    display: block;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.color-box1 {
+    background-color: white;
+    border: slategray 1px solid;
+    border-radius: 5px;
+}
+
+.color-box2 {
+    background-color: white;
+    border: slategray 1px solid;
+    border-radius: 5px;
+}
+
+.change {
+    transition: all 0.1s;
+}
+
+.change:hover {
+    transition: all 0.1s;
+    transform: rotateY(180deg);
+}
+
+.icon-bar2 a {
+    display: block;
+    position: relative;
+    text-align: center;
+    top: 90px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #9fa1a3;
+}
+
+.icon-bar a [name='pipette']:hover {
+    background-color: white;
+    border-radius: 100%;
+}
+
+.slidingtxt {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: auto;
+    height: 30px;
+    visibility: hidden;
+    text-align: center;
+    transition: all 0.3s ease;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    background-color: rgb(64, 61, 85);
+    z-index: -1;
+}
+
+.icon-bar a:hover {
+    background-color: #9fa1a3;
+    .slidingtxt {
+        visibility: initial;
+        -webkit-transform: translateX(55px);
+        transform: translate(55px);
+    }
+}
+
+
+/* Tooltip container */
+
+.tooltip {
+    position: relative;
+    display: none;
+}
+
+
+/* Tooltip text */
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 125px;
+    background-color: rgb(85, 85, 85, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 25%;
+    left: 210%;
+    margin-left: -60px;
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext_colorBox {
+    visibility: hidden;
+    width: 125px;
+    background-color: rgb(85, 85, 85, 0.5);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 25%;
+    left: 210%;
+    margin-left: -60px;
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+/* Tooltip arrow */
+
+.tooltip .tooltiptext::after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgb(85, 85, 85, 0.5) transparent transparent;
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
